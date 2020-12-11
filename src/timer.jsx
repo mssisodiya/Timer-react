@@ -2,14 +2,13 @@ import React, { Component } from "react";
 
 class Timer extends Component {
   state = {
-    h: 0,
-    m: 0,
-    s: 0,
+    h: 1,
+    m: 59,
+    s: 58,
   };
 
   startTimer = () => {
     var i = setInterval(this.start, 1000);
-    if (this.state.h >= 1) clearInterval(i);
   };
 
   start = () => {
