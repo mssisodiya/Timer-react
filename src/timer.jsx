@@ -26,7 +26,9 @@ class Timer extends Component {
         <h2>
           {this.state.h} : {this.state.m} : {this.state.s}
         </h2>
-        <button onClick={this.startTimer}>Start</button>
+        <button className="btn btn-primary btn-md" onClick={this.startTimer}>
+          Start
+        </button>
       </div>
     );
   }
